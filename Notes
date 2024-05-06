@@ -1,0 +1,78 @@
+Git
+---
+Git: software
+GitHub: service provider
+
+Version Control System
+    -track files, fix changes
+
+The Work Flow:
+--------------
+            git add               git commit       git push
+Working Dir -------> Staging Area ----------> Repo --------> Github
+
+git add .
+git commit -m "commit message"
+git log --oneline
+touch .gitignore
+    - make use of gitignore generator site
+git branch "branch name"
+git switch "branch name"
+git branch -d "branch name" : deletes a branch
+git reflog : moving back
+git restore
+
+Creating another branch [Merge & Conflicts]
+-------------------------------------------
+git branch "branch name"
+git checkout "branch name" (switches branch)
+
+Merging:
+--------
+git merge "branch name" -m "message"
+
+Diff
+----
+Reflects changes performed on a file
+
+git diff --staged
+git diff "hashone" "hashtwo"
+
+Git Stashing
+------------
+Temporarily store staged files to switch branches
+Stash is public to all branches
+
+git stash
+git stash pop
+git stash apply [optional]
+
+
+Git Rebase
+----------
+alternative way of merging, cleanup tool
+never use this feature on the main/master branch
+
+
+Pushing to Github:
+------------------
+git remote -v
+    checks for connected remote repositories
+git remote add origin "remote repo link"
+    origin is just a name...say to the remote repo branch
+git push -u origin main
+    deploy from main branch to origin branch
+    -u: sets an upstream link from main to origin
+git push
+
+git remote -v
+    view the fetch and push settings
+
+
+
+
+
+
+
+Time Stamp: 14:25
+Video: Complete GIT in 1 video
